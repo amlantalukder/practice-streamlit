@@ -11,7 +11,8 @@ df = sns.load_dataset("titanic")
 df
 x = st.sidebar.selectbox("Passenger Class", df['class'].unique())
 
-fig, ax = plt.subplots(figsize=(10, 4))
-ax = sns.boxplot(df[df['class'] == x], x='sex', y='age')
-st.pyplot(fig)
+with st.spinner(text="In progress"):
+    fig, ax = plt.subplots(figsize=(10, 4))
+    ax = sns.boxplot(df[df['class'] == x], x='sex', y='age')
+    st.pyplot(fig)
 
