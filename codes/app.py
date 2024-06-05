@@ -16,3 +16,7 @@ with st.spinner(text="In progress"):
     ax = sns.boxplot(df[df['class'] == x], x='sex', y='age')
     st.pyplot(fig)
 
+    fig, ax = plt.subplots(figsize=(10, 4))
+    ax = sns.boxplot(df[df['class'] == x], x='embarked', y='age')
+    st.pyplot(fig)
+
