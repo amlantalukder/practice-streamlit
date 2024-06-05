@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.write("""
-    # Practice app to learn streamlit (Updated)
+    # Practice app to learn streamlit (Updated1)
 """)
 
 df = sns.load_dataset("titanic")
